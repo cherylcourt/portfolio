@@ -10,6 +10,9 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
@@ -36,8 +39,8 @@
 
 			<div class="row text-center">
 				<div class="col-md-4">
-					<img class="img-responsive center-block" src="images/web_development_crop2.png" alt="screenshot of a stylized web page from Udacity">
-					<h3>Web Development Wiki</h3>
+					<img class="img-responsive center-block" src="images/web_development_crop2.png" alt="screenshot of a stylized web page from Udacity" data-toggle="modal" data-target="#wiki">
+					<h3>Wiki</h3>
 					<p>
 						<a href="http://helpful-kit-572.appspot.com/">
 							http://helpful-kit-572.appspot.com/
@@ -48,7 +51,7 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive center-block" src="images/rails_crop.png" alt="pictrailroad tracks leading into a tunnel">
+					<img class="img-responsive center-block" src="images/rails_crop.png" alt="pictrailroad tracks leading into a tunnel" data-toggle="modal" data-target="#project2">
 					<h3>First Rails App</h3>
 					<p>
 						<a href="https://github.com/cherylcourt/first_app">
@@ -57,7 +60,7 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive center-block" src="images/python_crop.png" alt="a python coiled up in the grass facing the camera">
+					<img class="img-responsive center-block" src="images/python_crop.png" alt="a python coiled up in the grass facing the camera" data-toggle="modal" data-target="#project3">
 					<h3>Anyconf</h3>
 					<p>
 						<a href="https://github.com/cherylcourt/anyconf">
@@ -85,6 +88,58 @@
 					</p>
 				</div>
 			</div>
+		</div>
+
+		<!-- Modals -->
+		<div class="modal fade" id="wiki" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-uppercase text-center" id="myModalLabel">Web Development Course - Wiki</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="images/web_development_crop2.png">
+		        Say something more about the course, link to the page where it is hosted. etc.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-uppercase" id="myModalLabel">My First Rails App</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="images/rails_crop.png">
+		        This was my first rails app. 
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-uppercase" id="myModalLabel">Anyconf</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive" src="images/python_crop.png">
+		        I did some stuff with Python here.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	</body>
 
