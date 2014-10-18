@@ -7,6 +7,7 @@
 
 		<title>Cheryl Court</title>
 
+		<link rel="icon" href="images/cheryl_circle.png" type="image/x-png">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
@@ -19,7 +20,7 @@
 		<div class="container">
 			<div class="row text-uppercase">
 				<div class="col-md-2">
-					<img class="small-image" src="images/zen_circle_green.png" alt="hand drawn zen circle (a.k.a. an enso)">
+					<img class="small-image" src="images/cheryl_crop.png" alt="hand drawn zen circle (a.k.a. an enso)" data-toggle="modal" data-target="#aboutMe">
 				</div>
 				<div class="col-md-10 text-right">
 					<h1>Cheryl Court</h1>
@@ -40,17 +41,15 @@
 			<div class="row text-center">
 				<div class="col-md-4">
 					<img class="img-responsive center-block" src="images/web.jpg" alt="screenshot of a stylized web page from Udacity" data-toggle="modal" data-target="#wiki">
-					<a href="http://helpful-kit-572.appspot.com/">
-						<h3>Web Development</h3>
-					</a>
+					<h3>Web Development</h3>
 					<p>
-						<a href="https://bitbucket.org/courtc/udacity">
-							https://bitbucket.org/courtc/udacity
+						<a href="https://github.com/cherylcourt/cs253">
+							https://github.com/cherylcourt/cs253
 						</a>
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive center-block" src="images/rails.jpg" alt="railroad tracks leading into a tunnel" data-toggle="modal" data-target="#project2">
+					<img class="img-responsive center-block" src="images/rails.jpg" alt="railroad tracks leading into a tunnel" data-toggle="modal" data-target="#rails">
 					<h3>First Rails App</h3>
 					<p>
 						<a href="https://github.com/cherylcourt/first_app">
@@ -59,34 +58,16 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive center-block" src="images/python.jpg" alt="a python coiled up in the grass facing the camera" data-toggle="modal" data-target="#project3">
-					<h3>Anyconf</h3>
+					<img class="img-responsive center-block" src="images/python.jpg" alt="a python coiled up in the grass facing the camera" data-toggle="modal" data-target="#python">
+					<h3>Python</h3>
 					<p>
-						<a href="https://github.com/cherylcourt/anyconf">
+						<a href="https://github.com/cherylcourt/anyconf/tree/yaml">
 							https://github.com/cherylcourt/anyconf
 						</a>	
 					</p>
 				</div>
 			</div>
 
-			<h2>About Me</h2>
-
-			<div class="row">
-				<div class="col-md-2">
-					<img class="img-responsive" src="images/cheryl_crop.png" alt="A picture of me, Cheryl Court.">
-				</div>
-				<div class="col-md-10">
-					<p>
-						I've always had a passion for solving problems and creating things for as long as I can remember.  Software development was a natural fit for me and I've been successfully crafting software solutions for more than ten years now. Beyond continuously building my technical skills I also like to delve into  the human factor involved in software development ranging from client interaction to team dynamics.  I believe clear communication and mutual respect are key in determining project success.
-					</p>
-					<p>
-						When I'm not busy developing software you might find me playing with my daughter or working on a scene for one of my acting classes among a number of other things (because life is short, y'know; although there always seems to be time for video games and tv).  
-					</p>
-					<p>
-						Thanks for stopping by and looking at some of my work.
-					</p>
-				</div>
-			</div>
 		</div>
 
 		<!-- Modals -->
@@ -97,8 +78,10 @@
 		        <h4 class="modal-title text-uppercase text-center" id="myModalLabel">Web Development Course - Wiki</h4>
 		      </div>
 		      <div class="modal-body">
-		        <img class="img-responsive" src="images/web.jpg">
-		        Say something more about the course, link to the page where it is hosted. etc.
+		      	<a href="http://helpful-kit-572.appspot.com/">
+		        	<img class="img-responsive modal-image" src="images/web.jpg">
+		      	</a>
+		        I created <a href="http://helpful-kit-572.appspot.com/">a simple wiki</a> for the final project of the <a href="https://www.udacity.com/course/cs253">Web Development</a> course at <a href="https://www.udacity.com">Udacity</a>.  This wiki allows the user to browse content, look at content history as well as set up an account to create new and edit existing pages.
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -107,15 +90,15 @@
 		  </div>
 		</div>
 
-		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="rails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h4 class="modal-title text-uppercase text-center" id="myModalLabel">My First Rails App</h4>
 		      </div>
 		      <div class="modal-body">
-		        <img class="img-responsive" src="images/rails.jpg">
-		        This was my first rails app. 
+		        <img class="img-responsive modal-image" src="images/rails.jpg">
+		        I successfully created a sample Ruby on Rails project as part of the <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial: Learn Rails by Example</a> by <a href="http://www.michaelhartl.com/">Michael Hartl</a>. 
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -124,15 +107,41 @@
 		  </div>
 		</div>
 
-		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="python" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h4 class="modal-title text-uppercase text-center" id="myModalLabel">Anyconf</h4>
 		      </div>
 		      <div class="modal-body">
-		        <img class="img-responsive" src="images/python.jpg">
-		        I did some stuff with Python here.
+		        <img class="img-responsive modal-image" src="images/python.jpg">
+		        AnyConf is a configuration library for python that wraps several other configuration libraries under a common API.  I added YAML support to this library.  This project was a collaboration.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+
+	<div class="modal fade" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-uppercase text-center" id="myModalLabel">About Me</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive modal-image" src="images/headshot1.jpg">
+		        <p>
+							I've always had a passion for solving problems and creating things for as long as I can remember.  Software development was a natural fit for me and I've been successfully crafting software solutions for more than ten years now. Beyond continuously building my technical skills I also like to delve into  the human factor involved in software development ranging from client interaction to team dynamics.  I believe clear communication and mutual respect are key in determining project success.
+						</p>
+						<p>
+							When I'm not busy developing software you might find me playing with my daughter or working on a scene for one of my acting classes among a number of other things (because life is short, y'know; although there always seems to be time for video games and tv).  
+						</p>
+						<p>
+							Thanks for stopping by and looking at some of my work.
+						</p>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
