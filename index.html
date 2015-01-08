@@ -39,7 +39,7 @@
       <h2>Featured Work</h2>
 
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <img class="img-responsive center-block" src="images/web.jpg" alt="Spider web covered in dew" data-toggle="modal" data-target="#wiki">
           <h3>Web Development</h3>
           <p>
@@ -48,7 +48,7 @@
             </a>
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <img class="img-responsive center-block" src="images/rails.jpg" alt="Railroad tracks leading into a tunnel" data-toggle="modal" data-target="#rails">
           <h3>First Rails App</h3>
           <p>
@@ -57,7 +57,10 @@
             </a>
           </p>
         </div>
-        <div class="col-md-4">
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-6">
           <img class="img-responsive center-block" src="images/python.jpg" alt="A python coiled up in the grass facing the camera" data-toggle="modal" data-target="#python">
           <h3>Python</h3>
           <p>
@@ -66,7 +69,17 @@
             </a>
           </p>
         </div>
+        <div class="col-md-6">
+          <img class="img-responsive center-block" src="images/frogger.jpg" alt="A screenshot of my online frogger game" data-toggle="modal" data-target="#frogger">
+          <h3>Canvas Game</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/ndp3" target="_blank">
+              https://github.com/cherylcourt/ndp3
+            </a>
+          </p>
+        </div>
       </div>
+
     </div>
 
     <footer class="text-center">
@@ -140,6 +153,26 @@
           <div class="modal-body">
             <img class="img-responsive modal-image" src="images/python.jpg" alt="A python coiled up in the grass facing the camera">
             AnyConf is a configuration library for python that wraps several other configuration libraries under a common API.  I added YAML support to this library.  This project as a whole was a collaborative effort.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="froggerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-uppercase text-center" id="froggerModalLabel">Canvas Game</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/frogger.jpg" alt="A python coiled up in the grass facing the camera">
+            This game was developed as part of project 3 of Udacity's Front End Web Developer Nanodegree.  We were
+            given a background of tiles and some specific rules, which we were allowed to build upon to create an
+            online game similar to Frogger using HTML5 Canvas and Javascript.  The game can be played online
+            <a href="http://www.cherylcourt.ca/frogger" target="_blank">here</a>.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
