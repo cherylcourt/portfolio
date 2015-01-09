@@ -39,37 +39,7 @@
       <h2>Featured Work</h2>
 
       <div class="row text-center">
-        <div class="col-md-6">
-          <img class="img-responsive center-block" src="images/web.jpg" alt="Spider web covered in dew" data-toggle="modal" data-target="#wiki">
-          <h3>Web Development</h3>
-          <p>
-            <a href="https://github.com/cherylcourt/cs253" target="_blank">
-              https://github.com/cherylcourt/cs253
-            </a>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <img class="img-responsive center-block" src="images/rails.jpg" alt="Railroad tracks leading into a tunnel" data-toggle="modal" data-target="#rails">
-          <h3>First Rails App</h3>
-          <p>
-            <a href="https://github.com/cherylcourt/first_app" target="_blank">
-              https://github.com/cherylcourt/first_app
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-md-6">
-          <img class="img-responsive center-block" src="images/python.jpg" alt="A python coiled up in the grass facing the camera" data-toggle="modal" data-target="#python">
-          <h3>Python</h3>
-          <p>
-            <a href="https://github.com/cherylcourt/anyconf/tree/yaml" target="_blank">
-              https://github.com/cherylcourt/anyconf
-            </a>
-          </p>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <img class="img-responsive center-block" src="images/frogger.jpg" alt="A screenshot of my online frogger game" data-toggle="modal" data-target="#frogger">
           <h3>Canvas Game</h3>
           <p>
@@ -78,8 +48,55 @@
             </a>
           </p>
         </div>
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="images/resume.jpg" alt="Screenshot of online resume" data-toggle="modal" data-target="#resume">
+          <h3>Interactive Resume</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/resume" target="_blank">
+              https://github.com/cherylcourt/resume
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="images/portfolio.jpg" alt="A screenshot of my online portfolio" data-toggle="modal" data-target="#portfolio">
+          <h3>Online Portfolio</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/ndp1" target="_blank">
+              https://github.com/cherylcourt/ndp1
+            </a>
+          </p>
+        </div>
       </div>
 
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="images/web.jpg" alt="Spider web covered in dew" data-toggle="modal" data-target="#wiki">
+          <h3>Web Development</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/cs253" target="_blank">
+              https://github.com/cherylcourt/cs253
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="images/rails.jpg" alt="Railroad tracks leading into a tunnel" data-toggle="modal" data-target="#rails">
+          <h3>First Rails App</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/first_app" target="_blank">
+              https://github.com/cherylcourt/first_app
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive center-block" src="images/python.jpg" alt="A python coiled up in the grass facing the camera" data-toggle="modal" data-target="#python">
+          <h3>Python</h3>
+          <p>
+            <a href="https://github.com/cherylcourt/anyconf/tree/yaml" target="_blank">
+              https://github.com/cherylcourt/anyconf
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer class="text-center">
@@ -108,6 +125,64 @@
     </footer>
 
     <!-- Modals -->
+    <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="froggerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-uppercase text-center" id="froggerModalLabel">Canvas Game</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/frogger.jpg" alt="A screenshot of my online frogger game">
+            This game was developed as part of project 3 of Udacity's Front End Web Developer Nanodegree.  We were
+            given a background of tiles and some specific rules, which we were allowed to build upon to create an
+            online game similar to Frogger using HTML5 Canvas and Javascript.  The game can be played online
+            <a href="http://www.cherylcourt.ca/frogger" target="_blank">here</a>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-uppercase text-center" id="resumeModalLabel">Interactive Resume</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/resume.jpg" alt="A screenshot of my online resume">
+            This online interactive resume was developed as part of project 2 of Udacity's Front End Web Developer Nanodegree.  We were
+            given some existing javascript to modify and add content to.  The resume can be found online
+            <a href="http://cherylcourt.github.io/resume" target="_blank">here</a>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-uppercase text-center" id="portfolioModalLabel">Online Portfolio</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive modal-image" src="images/portfolio.jpg" alt="A screenshot of my online resume">
+            This online portfolio was developed as project 1 of Udacity's Front End Web Developer Nanodegree.  We were
+            given a static layout design mockup for how the portfolio should look and used the concepts learned in
+            Udacity's Intro to HTML and CSS course to build the page.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="modal fade" id="wiki" tabindex="-1" role="dialog" aria-labelledby="webModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -161,25 +236,6 @@
       </div>
     </div>
 
-    <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="froggerModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title text-uppercase text-center" id="froggerModalLabel">Canvas Game</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive modal-image" src="images/frogger.jpg" alt="A python coiled up in the grass facing the camera">
-            This game was developed as part of project 3 of Udacity's Front End Web Developer Nanodegree.  We were
-            given a background of tiles and some specific rules, which we were allowed to build upon to create an
-            online game similar to Frogger using HTML5 Canvas and Javascript.  The game can be played online
-            <a href="http://www.cherylcourt.ca/frogger" target="_blank">here</a>.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="modal fade" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
       <div class="modal-dialog">
